@@ -9,6 +9,7 @@ Algoritmo "NumeroPerfito"
 Var
    i,j,somaDiv,n: inteiro
 
+   // Não sei se é para escrever os 4 numeros
 
 Inicio
    escreva("Digite um valor:")
@@ -17,10 +18,11 @@ Inicio
    somaDiv <- 0
    para j <- 1 ate n-1 faça
       se(n mod j =0) entao
+         escreval(j," + ", somaDiv)
          somaDiv := somaDiv + j
       fimse
    fimpara
-   se(somaDiv =n)entao
+   se(somaDiv = n)entao
       escreva("Perfeito")
    senao
       escreva("Não Perfeito")
