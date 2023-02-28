@@ -1,12 +1,12 @@
 
-package exercicio_1;
+package exercicio1;
 import java.util.Scanner;
 
 /* Faça um algoritmo para ler a base e a altura de um triangulo retângulo. 
    Em seguida, calcular a sua área. Imprimir: base, altura e aárea.
 */
 
-public class Exercicio_1 {
+public class Exercicio1 {
 
    
     public static void main(String[] args) {

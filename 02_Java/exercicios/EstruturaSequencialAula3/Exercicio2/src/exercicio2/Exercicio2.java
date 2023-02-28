@@ -1,5 +1,5 @@
 
-package exercicio_2;
+package exercicio2;
 import java.util.Scanner;
 /* Elabore um algoritmo para ler o nome de um aluno, 
 sua idade (em anos) e as quatro notas (de quatro bimestres). 
@@ -7,7 +7,7 @@ Calcular a média anual do aluno.
 Imprimir: nome, idade, notas e média.
 */
 
-public class Exercicio_2 {
+public class Exercicio2 {
 
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
