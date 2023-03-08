@@ -15,7 +15,7 @@ public class Exercicio2 {
         System.out.println("Entre com um numero: ");
         int num = sc.nextInt();
 
-        if (num > 0) {
+        if (num >= 0) {
             if (num % 2 == 0) {
                 System.out.println("O numero " + num + " eh Par ");
             } else {
