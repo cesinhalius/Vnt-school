@@ -22,11 +22,12 @@ public class Exercicio3 {
 
         if (financiamento <= (salario * 5)) {
             System.out.println("Financiamento Concedido");
-            System.out.println("Obrigado por nos consultar");
+            
         } else {
             System.out.println("Financiamento Negado");
-            System.out.println("Obrigado por nos consultar");
+            
         }
+        System.out.println("Obrigado por nos consultar");
     }
 
 }
