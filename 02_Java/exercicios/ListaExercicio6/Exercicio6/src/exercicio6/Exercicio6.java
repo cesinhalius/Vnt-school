@@ -23,8 +23,7 @@ public class Exercicio6 {
         int opcao = sc.nextInt();
 
         switch (opcao) {
-            default:
-                System.out.println("Digite uma opcao correta");
+
             case 1:
                 System.out.println("Obrigado pela doacao de R$10 reais");
                 break;
@@ -38,8 +37,13 @@ public class Exercicio6 {
                 System.out.print("Digite o valor que quer doar:");
                 double valor = sc.nextDouble();
                 System.out.println(" Obrigado pela doacao de R$ " + valor + " reais ");
+                break;
             case 5:
                 System.out.println("Obrigado pela visita");
+                break;
+            default:
+                System.out.println("Digite uma opcao correta");
+                break;
         }
         sc.close();
     }
