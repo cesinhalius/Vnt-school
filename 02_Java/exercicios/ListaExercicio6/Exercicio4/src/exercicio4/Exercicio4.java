@@ -26,14 +26,14 @@ public class Exercicio4 {
         double media = (p1 + p2 + p3) / 3;
 
         if (media >= 7) {
-            System.out.printf("Aprovado com a nota %.1f%n" , media);
+            System.out.printf("Aprovado com a nota %.1f%n", media);
         } else {
-            if (media < 7 && media >= 5) {
-                System.out.printf("Esta de Recuperacao com a nota de %.1f%n" , media);
+            if (media >= 5) {
+                System.out.printf("Esta de Recuperacao com a nota de %.1f%n", media);
             } else {
-                if (media < 5) {
-                    System.out.println("Esta Reprovado e devera repetir o semestre ");
-                }
+
+                System.out.println("Esta Reprovado e devera repetir o semestre ");
+
             }
 
         }
