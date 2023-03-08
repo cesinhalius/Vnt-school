@@ -23,44 +23,45 @@ public class Exercicio5 {
         double aumento;
 
         switch ((int) salario) {
-            default: {
-                aumento = 0;
-                novoSalario = salario + aumento;
-                break;
-            }
-            case 0,1,2,3: {
+
+            case 0, 1, 2, 3: {
                 aumento = 0.20;
-                novoSalario = salario + aumento;
+                novoSalario = salario + (salario * aumento);
                 aumento = 20;
                 break;
             }
-            case 4,5,6: {
+            case 4, 5, 6: {
                 aumento = 0.15;
-                novoSalario = salario + aumento;
+                novoSalario = salario + (salario * aumento);
                 aumento = 15;
                 break;
             }
-            case 7,8,9: {
+            case 7, 8, 9: {
                 aumento = 0.12;
-                novoSalario = salario + aumento;
+                novoSalario = salario + (salario * aumento);
                 aumento = 12;
                 break;
             }
-            case 10,11,12: {
+            case 10, 11, 12: {
                 aumento = 0.1;
-                novoSalario = salario + aumento;
+                novoSalario = salario + (salario * aumento);
                 aumento = 10;
                 break;
             }
-            case 13,14,15: {
+            case 13, 14, 15: {
                 aumento = 0.07;
-                novoSalario = salario + aumento;
+                novoSalario = salario + (salario * aumento);
                 aumento = 7;
                 break;
             }
+            default: {
+                aumento = 0;
+                novoSalario = salario + (salario * aumento);
+                break;
+            }
         }
-        
-        System.out.println((int)aumento + " % aumento " + salario + "    " + novoSalario);
+
+        System.out.println(aumento + " % aumento " + salario + "    " + novoSalario);
 
     }
 
