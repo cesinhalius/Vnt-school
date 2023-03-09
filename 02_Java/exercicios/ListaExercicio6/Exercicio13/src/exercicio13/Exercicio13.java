@@ -18,26 +18,26 @@ public class Exercicio13 {
 
         System.out.println("Entre com valor: ");
         double valor = sc.nextDouble();
-        double Ptotal;
+        double Ptotal = 0;
 
         if (valor <= 1903.98) {
-            System.out.println("Voce tera que pagar: " + valor);
+            System.out.println("Voce esta Isento no pagamento");
         } else {
             if (valor >= 1903.99 && valor <= 2826.65) {
-                Ptotal = valor + 0.075;
-                System.out.println("Voce tera que pagar: " + Ptotal);
+                Ptotal = valor + 1.075;
+                
             } else {
                 if (valor >= 2826.66 && valor <= 3751.05) {
                     Ptotal = valor + 0.15;
-                    System.out.println("Voce tera que pagar: " + Ptotal);
+                    
                 } else {
                     if (valor >= 3751.06 && valor <= 4664.68) {
-                        Ptotal = valor + 0.225;
-                        System.out.println("Voce tera que pagar: " + Ptotal);
+                        Ptotal = valor + 1.225;
+                        
                     } else {
                         if (valor >= 4664.68) {
-                            Ptotal = valor + 0.275;
-                            System.out.println("Voce tera que pagar: " + Ptotal);
+                            Ptotal = valor + 1.275;
+                            
                         }
 
                     }
@@ -45,6 +45,7 @@ public class Exercicio13 {
             }
 
         }
+        System.out.printf("Voce tem que pagar:R$ %.4f%n" , Ptotal);
     }
 
 }
