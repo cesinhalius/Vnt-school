@@ -14,6 +14,7 @@ public class Exercicio8 {
     public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             int nAluno = 0;
+            double media = 0;
             double mediaT = 0;
             
             do{
@@ -24,13 +25,16 @@ public class Exercicio8 {
             System.out.println("Digite a segunda do nota:");
             double nota2 = sc.nextDouble();
             
-            if(nota1 >= 6.0 || nota2 >=6.0){
+            media = (nota1 + nota2) / 2;
+            
+            if(media >= 6.0){
                 System.out.println("O aluno " + nome + " foi aprovado ");
             }else{
                 System.out.println("O aluno " + nome + " nao foi aprovado");
             }
             
             mediaT = (nota1 + nota2) / 3;
+            nAluno++;
             
             }while(nAluno != 3);
             
