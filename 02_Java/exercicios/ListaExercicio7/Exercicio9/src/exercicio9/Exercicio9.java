@@ -10,33 +10,34 @@ public class Exercicio9 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int segundo = 0;
-        int minuto = 0;
-        int horas = 0;
+        int segundo, minuto, horas;
         double massaF = 0;
+        segundo = 0;
+        minuto = 0;
+        horas = 0;
 
         System.out.println("Entre com a massa do material: ");
         double massaI = sc.nextDouble();
-
-        while (massaF < 0.5) {
-            for (int i = 0; i <= segundo; i++) {
-                if (i == 50) {
-                    massaF = massaI - (massaI / 2);
-                } else {
-                    if (i == 60) {
-                        i = 0;
-                        minuto++;
-                    }
-                }
-                
-                if(minuto == 60){
-                    minuto = 0;
-                    horas++;
-                }
-
-            }
-        }
         System.out.println(massaI);
+        
+        while (massaI >= 0.5) {
+            if (segundo == 50) {
+                massaI = massaI / 2;
+            } else {
+                if (segundo == 60) {
+                    minuto++;
+                    segundo = 0;
+                }
+            }
+
+            if (minuto == 60) {
+                minuto = 0;
+                horas++;
+            }
+            segundo++;
+        }
+        massaF = massaI;
+        
         System.out.println(massaF);
         System.out.println(horas + " : " + minuto + " : " + segundo);
 
