@@ -19,12 +19,14 @@ public class Exercicio6 {
         System.out.println("Entre com um numero:");
         int num = sc.nextInt();
         
+        System.out.println("quadrado | cubo");
+        
         if(num >= 0){
             for (int i = 1; i <= num; i++) {
                 quadrado = Math.pow(i, 2);
                 cubo = Math.pow(i, 3);
                 
-                System.out.println("quadrado | cubo");
+                
                 System.out.println( linha + "  " + quadrado + " | " + cubo);
                 linha++;
             }
