@@ -34,16 +34,18 @@ public class Exercicio5 {
 
             if (opcao == 1) {
                 ProdutoA++;
+                quant++;
             } else {
                 if (opcao == 2) {
                     ProdutoB++;
+                    quant++;
                 } else {
                     if (opcao == 3) {
                         ProdutoC++;
+                        quant++;
                     }
                 }
             }
-            quant++;
         } while (opcao != 4);
         
         System.out.println("MUITO OBRIGADO");
