@@ -13,17 +13,24 @@ public class Exercicio8 {
 
     public static void main(String[] args) {
         Random numeros = new Random();
-        int[] jogo = new int[6]; 
-        
+        int[] jogo = new int[6];
+
         for (int i = 0; i < jogo.length; i++) {
-            jogo[i] = numeros.nextInt(60);
+            for (int j = 1; j <= 5; j++) {
+                jogo[i] = numeros.nextInt(60);
+
+                if (jogo[i] == 0 || jogo[i] == jogo[j]) {
+                    jogo[i] = numeros.nextInt(60);
+                }
+            }
         }
-        
+
         Arrays.sort(jogo);
+
         for (int i = 0; i < jogo.length; i++) {
-            System.out.print(jogo[i] + "  ");
+            System.out.printf(jogo[i] + "  ");
         }
-        
+
     }
 
 }
