@@ -21,8 +21,8 @@ public class Exercicio2 {
         }
         System.out.println("------------------------------");
         
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
+        for (int i = 0; i < nome.length; i++) {
+            for (int j = 0; j < nome.length; j++) {
                 if(i != j){
                     System.out.println(nome[i] + "() X ()" + nome[j]);
                 }
