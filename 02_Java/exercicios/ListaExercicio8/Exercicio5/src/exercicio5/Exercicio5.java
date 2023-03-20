@@ -22,29 +22,38 @@ public class Exercicio5 {
                 System.out.println("Entre com um valor para a posicao " + "[" + i + "," + j + "]");
                 matriz[i][j] = sc.nextInt();
             }
-
         }
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " , ");
-            }
-        }
+        
+        System.out.println("--------------------------------------");
+        System.out.println("matriz original:");
+        imprimirMatriz(matriz);
+        System.out.println();
+        
+        
+        
         // identificar numeros negativos
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 if (matriz[i][j] < 0) {
                     matriz[i][j] = 0;
                 }
+                matrizModificada[i][j] = matriz[i][j];
             }
         }
-
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " , ");
-            }
-        }
+        System.out.println("Matriz Modificada:");
+        imprimirMatriz(matrizModificada);
+        System.out.println();
+   
         sc.close();
     }
+
+    static void imprimirMatriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.printf(matriz[i][j] + " ");
+                
+                
+            }
+        }
+    }
 }
-
-
