@@ -18,7 +18,7 @@ public class Exercicio9 {
 
         System.out.println("Entre com a massa do material: ");
         double massaI = sc.nextDouble();
-        System.out.println(massaI);
+        System.out.println("A massa inicial eh: " + massaI);
         
         while (massaI >= 0.5) {
             if (segundo == 50) {
@@ -38,7 +38,7 @@ public class Exercicio9 {
         }
         massaF = massaI;
         
-        System.out.println(massaF);
+        System.out.println("A massa final eh: " + massaF);
         System.out.println(horas + " : " + minuto + " : " + segundo);
 
     }
