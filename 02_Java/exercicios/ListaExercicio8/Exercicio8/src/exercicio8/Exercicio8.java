@@ -17,20 +17,26 @@ public class Exercicio8 {
 
         for (int i = 0; i < jogo.length; i++) {
             for (int j = 1; j <= 5; j++) {
-                jogo[i] = numeros.nextInt(60);
+                jogo[i] = numeros.nextInt(61);
 
                 if (jogo[i] == 0 || jogo[i] == jogo[j]) {
-                    jogo[i] = numeros.nextInt(60);
+                    jogo[i] = numeros.nextInt(61);
                 }
             }
         }
 
         Arrays.sort(jogo);
-
-        for (int i = 0; i < jogo.length; i++) {
-            System.out.printf(jogo[i] + "  ");
-        }
+        
+        ImprimirJogo(jogo);
 
     }
+
+    static void ImprimirJogo(int[] j) {
+        for (int i = 0; i < j.length; i++) {
+            System.out.printf(j[i] + "  ");
+        }
+    }
+    
+   
 
 }
