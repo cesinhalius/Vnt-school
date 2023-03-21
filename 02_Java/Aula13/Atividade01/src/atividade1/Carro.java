@@ -18,9 +18,7 @@ public class Carro {
         } else {
             if (velocidade <= 60) {
                 velocidade = velocidade + 5;
-            } else {
-                velocidade = velocidade + 0;
-            }
+            } 
 
         }
         System.out.println(velocidade + " " +"Acelerando!!");
@@ -30,22 +28,15 @@ public class Carro {
         if (velocidade > 60) {
             velocidade = velocidade - 10;
             System.out.println("Freando!!!");
-        } else {
-            velocidade = velocidade + 0;
-        }
+        } 
     }
 
-    void AcenterFarol() {
+    void acenterFarol() {
         if (velocidade == 0) {
             System.out.println("Apagar farol!!");
         } else {
             System.out.println("Acender farol!!");
         }
-    }
-
-    @Override
-    public String toString() {
-        return "cor= " + cor + ", modelo = " + modelo + ", velocidade = " + velocidade;
     }
 
 }

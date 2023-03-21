@@ -13,7 +13,7 @@ public class Atividade01 {
         c1.velocidade = 60;
         c1.Acelerar();
         c1.Frear();
-        c1.AcenterFarol();
+        c1.acenterFarol();
         System.out.println("----------------------------------");
         
         
@@ -24,7 +24,7 @@ public class Atividade01 {
         c2.velocidade = 0;
         c2.Acelerar();
         c2.Frear();
-        c2.AcenterFarol();
+        c2.acenterFarol();
         
         System.out.println("------------------------------------");
         
@@ -34,7 +34,7 @@ public class Atividade01 {
         c3.velocidade = 80;
         c3.Acelerar();
         c3.Frear();
-        c3.AcenterFarol();
+        c3.acenterFarol();
         
         System.out.println("------------------------------------");
     }
