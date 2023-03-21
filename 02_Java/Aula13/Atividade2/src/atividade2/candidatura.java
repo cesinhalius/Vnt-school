@@ -1,6 +1,6 @@
 package atividade2;
 
-public class candidatura {
+public class Candidatura {
     // atributos
 
     String nomeCanditado;
@@ -15,7 +15,7 @@ public class candidatura {
     }
 
     void enviarTeste() {
-        if (vagaDesejada == "TECNOLOGIA") {
+        if ("TECNOLOGIA".equals(this.vagaDesejada)) {
             System.out.println("Enviar teste de " + this.vagaDesejada + " para " + this.nomeCanditado);
         } else {
             System.out.println("Enviar teste de " + this.vagaDesejada + " para " + this.nomeCanditado);

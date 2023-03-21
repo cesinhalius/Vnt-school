@@ -13,7 +13,7 @@ public class Atividade2 {
 
     public static void main(String[] args) {
         
-        candidatura c1 = new candidatura();
+        Candidatura c1 = new Candidatura();
         c1.nomeCanditado = "Cesar";
         c1.vagaDesejada = "TECNOLOGIA";
         c1.pretensaoSalarial = 13.000;
@@ -22,7 +22,7 @@ public class Atividade2 {
         
         System.out.println(" ");
         
-        candidatura c2 = new candidatura();
+        Candidatura c2 = new Candidatura();
         c2.nomeCanditado = "Ana";
         c2.vagaDesejada = "GERAL";
         c2.pretensaoSalarial = 8.000;
