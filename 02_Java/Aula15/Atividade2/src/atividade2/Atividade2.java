@@ -13,15 +13,15 @@ public class Atividade2 {
 
     public static void main(String[] args) {
 
-        Produto p = new Produto("", 20, 90);
+            Produto p = new Produto("", 20, 90);
 
-        Produto cafe = new Produto("cafe", 0, 80);
+            Produto cafe = new Produto("cafe", 0, 80);
 
-        Produto p3 = new Produto("", 0, 90);
+            Produto p3 = new Produto("", 0, 90);
 
-        Produto macarrao = new Produto("macarrao", 10, 90);
+            Produto macarrao = new Produto("macarrao", 10, 90);
 
-        
+
 
         System.out.println(macarrao.nome);
         System.out.println(macarrao.preco);
