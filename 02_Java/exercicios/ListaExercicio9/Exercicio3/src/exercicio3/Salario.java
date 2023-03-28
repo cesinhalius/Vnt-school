@@ -5,17 +5,17 @@ public class Salario {
     double percentual;
     
     
-    double aumentodesalario(double v){
+    void aumentodesalario(){
         percentual = (1.5/100);
-        valor = v + (percentual * v);
-        return valor;
+        valor = valor + (percentual * valor);
+        
     }
     
-    double aumentoemdobro(double x){
+    void aumentoemdobro(){
         percentual = percentual * 2;
         
-        valor = x + (percentual * x);
+        valor = valor + (percentual * valor);
         
-        return valor;
+        
     }
 }

@@ -26,9 +26,10 @@ public class Exercicio7 {
         System.out.println("Entre com a terceira nota:");
         e.nota3 = sc.nextDouble();
         
-        System.out.printf("Final: %.2f pontos%n", e.Media());
+        double media = e.Media();
+        System.out.printf("Final: %.2f pontos%n", media);
         
-        if (e.Media() < 60.0) {
+        if (media < 60.0) {
             System.out.println("Reprovado");
             System.out.printf("Precisa de %.2f Pontos%n",e.pontosFaltando());
             

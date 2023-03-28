@@ -4,9 +4,10 @@ class Material {
 
     double massa;
 
-    double perdadamassa(double m) {
-        m = m / 2;
+    
+    double perdadamassa() {
+        massa = massa / 2;
 
-        return m;
+        return massa;
     }
 }

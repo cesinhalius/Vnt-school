@@ -8,12 +8,12 @@ public class Estudante {
     
     
     double Media(){
-        return nota1 + nota2 + nota3;
+        return ((nota1 * 30) + (nota2 * 35) + (nota3 * 35)/10);
     }
     
     double pontosFaltando(){
-        if(Media() < 60.0){
-            return 60.0 - Media();
+        if(Media() < 60){
+            return 60 - Media();
         }else {
             return Media();
         }

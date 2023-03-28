@@ -23,12 +23,12 @@ public class Exercicio3 {
         
         while(ano <= 2022){
             if(ano == 2017){
-                salarioI.aumentodesalario(salarioI.valor);
+                salarioI.aumentodesalario();
             }
             
             
             if(ano >= 2018){
-                salarioI.aumentoemdobro(salarioI.valor);
+                salarioI.aumentoemdobro();
             }
             
             System.out.printf(ano + "  " +"%.1f%n",salarioI.valor);

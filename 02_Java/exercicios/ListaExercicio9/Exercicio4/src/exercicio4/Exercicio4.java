@@ -14,20 +14,19 @@ public class Exercicio4 {
     public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             Material h = new Material();
-            double massaI;
-            double massaF;
+            
             int cont = 0;
             int minuto = 0;
             int horas = 0;
             
             System.out.println("Digite a massa inicial:");
-            massaI = sc.nextDouble();
-            System.out.println("massa Inicial eh: " + massaI);
+            h.massa = sc.nextDouble();
+            System.out.println("massa Inicial eh: " + h.massa);
 
-            while(massaI >= 0.5){
+            while(h.massa >= 0.5){
                 
                 if (cont == 50) {
-                   massaI = h.perdadamassa(massaI);
+                   h.massa = h.perdadamassa();
                 }else{
                     if(cont == 60){
                         minuto++;
@@ -41,10 +40,10 @@ public class Exercicio4 {
                 }
                 cont++;
             }
-            massaF = massaI;
+            
 
             
-            System.out.printf("massa Final eh: %.2f%n" , massaF);
+            System.out.printf("massa Final eh: %.2f%n" , h.massa);
             System.out.println("O tempo gasto foi: " + horas + "h" + " " + minuto + "m");
             
     }

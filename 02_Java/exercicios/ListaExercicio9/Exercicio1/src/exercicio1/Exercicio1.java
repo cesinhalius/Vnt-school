@@ -24,7 +24,7 @@ public class Exercicio1 {
         System.out.println("Informe o tamanho do ponto C");
         X.c = sc.nextDouble();
         
-        System.out.printf("%.2f%n",X.area(X.a,X.b,X.c));
+        System.out.printf("A area eh:%.2f%n",X.area());
         
         
         /*
