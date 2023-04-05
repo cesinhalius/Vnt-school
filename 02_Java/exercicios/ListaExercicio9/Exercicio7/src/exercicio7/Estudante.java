@@ -15,7 +15,7 @@ public class Estudante {
         if(Media() < 60){
             return 60 - Media();
         }else {
-            return Media();
+            return 0;
         }
     }
 }
