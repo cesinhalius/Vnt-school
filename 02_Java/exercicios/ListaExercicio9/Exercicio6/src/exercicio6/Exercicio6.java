@@ -34,10 +34,10 @@ public class Exercicio6 {
             System.out.println("Favor inserir valores !");
             sc.next();
         }
-        System.out.printf("Nome: %s Salário Liquido: %.2f%n", f.getNome(), f.descontoImposto(imposto));
+        System.out.printf("Nome: %s Salario Liquido: %.2f%n", f.getNome(), f.descontoImposto(imposto));
         System.out.println("Entre com o valor do aumento:");
-        System.out.printf("Nome : %s Salário bruto com aumento: %.2f%n", f.getNome(), f.aumentoSalario(sc.nextDouble()));
-        System.out.printf("Nome: %s Salário Liquido corrigido: %.2f%n", f.getNome(), f.descontoImposto(imposto));
+        System.out.printf("Nome : %s Salario bruto com aumento: %.2f%n", f.getNome(), f.aumentoSalario(sc.nextDouble()));
+        System.out.printf("Nome: %s Salario Liquido corrigido: %.2f%n", f.getNome(), f.descontoImposto(imposto));
 
     }
 
