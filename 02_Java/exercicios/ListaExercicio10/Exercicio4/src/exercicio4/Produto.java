@@ -3,31 +3,40 @@ package exercicio4;
 class Produto {
 
     protected int codigo;
-    protected String Produto;
+    protected String nome;
     protected double preco;
+    protected int quantidade;
 
-    double conta(int c) {
-        double compra = 0;
-        switch (c) {
-            case 1:
-                compra = compra + 7.00;
-                break;
-            case 2:
-                compra += 9.00;
-                break;
-            case 3:
-                compra += 11.00;
-                break;
-            case 4:
-                compra += 5.00;
-            case 5:
-                compra += 4.00;
-            default:
-                break;
-        }
-        return compra;
+    public double calcularPagar() {
+        return quantidade * preco;
+    }
 
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
 }
-
