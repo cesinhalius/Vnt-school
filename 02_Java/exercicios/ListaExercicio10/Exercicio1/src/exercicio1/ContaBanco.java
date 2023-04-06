@@ -2,7 +2,7 @@ package exercicio1;
 
 public class ContaBanco {
 
-    private int numConta;
+    public int numConta;
     protected String tipo;
     private String nomeDono;
     private double saldo;
@@ -79,15 +79,15 @@ public class ContaBanco {
 
     void sacar(double s) {
         if (getStatus() == true && getSaldo() > 0) {
-            setSaldo(saldo -= s);
+            setSaldo(saldo - s);
         }
     }
 
     void pegarMensal() {
         if("CC".equals(tipo)){
-            setSaldo(saldo -= 12.00);
+            setSaldo(saldo - 12.00);
         }else if("CP".equals(tipo)){
-            setSaldo(saldo -= 20.00);
+            setSaldo(saldo - 20.00);
         }
     }
 
