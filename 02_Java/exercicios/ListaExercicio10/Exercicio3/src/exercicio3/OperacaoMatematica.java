@@ -2,22 +2,23 @@ package exercicio3;
 
 public class OperacaoMatematica {
     
+    public int num = 5;
+
+   
     
-    
-    
-    void PositivoOuNegativo(int i){
-        if(i >0){
-            System.out.println("Numero " + i + "eh positivo");
+    void PositivoOuNegativo(){
+        if(num >0){
+            System.out.println("Numero " + num + "eh positivo");
         }else{
-            System.out.println("Numero " + i + "eh positivo");
+            System.out.println("Numero " + num + "eh positivo");
         }
     }
     
-    void ParOuImpar(int i){
-        if(i%2==0){
-            System.out.println("Numero " + i + " eh par");
+    void ParOuImpar(){
+        if(num%2==0){
+            System.out.println("Numero " + num + " eh par");
         }else{
-            System.out.println("Numero " + i + " eh impar");
+            System.out.println("Numero " + num + " eh impar");
         }
     }
 }
