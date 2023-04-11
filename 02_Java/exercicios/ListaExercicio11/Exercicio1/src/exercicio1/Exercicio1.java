@@ -31,7 +31,7 @@ public class Exercicio1 {
                 
 
         } while (!confereInfo);
-        Conta c1 = new Conta(nConta, name, deposito);
+        Conta c1 = new Conta(nConta, name);
         
         System.out.println(c1.getNumeroConta());
         System.out.println(c1.getProprietario());

@@ -11,13 +11,16 @@ public class Conta implements ControleConta{
         this.balanco = balanco;
     }
 
+    public Conta(int numeroConta, String proprietario) {
+        this.numeroConta = numeroConta;
+        this.proprietario = proprietario;
+    }
+
     public int getNumeroConta() {
         return numeroConta;
     }
 
-    public void setNumeroConta(int numeroConta) {
-        this.numeroConta = numeroConta;
-    }
+    
 
     public String getProprietario() {
         return proprietario;
