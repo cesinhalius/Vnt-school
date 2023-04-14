@@ -6,7 +6,7 @@ public class OperacaoMatematica {
 
    
     
-    void PositivoOuNegativo(){
+    public void PositivoOuNegativo(){
         if(num >0){
             System.out.println("Numero " + num + "eh positivo");
         }else{
@@ -14,7 +14,7 @@ public class OperacaoMatematica {
         }
     }
     
-    void ParOuImpar(){
+    public void ParOuImpar(){
         if(num%2==0){
             System.out.println("Numero " + num + " eh par");
         }else{
